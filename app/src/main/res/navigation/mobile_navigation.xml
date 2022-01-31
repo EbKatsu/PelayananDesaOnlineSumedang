@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_beranda">
+
+    <fragment
+        android:id="@+id/nav_beranda"
+        android:name="com.example.pelayananonlinesumedang.ui.Beranda.BerandaFragment"
+        android:label="@string/menu_beranda"
+        tools:layout="@layout/fragment_beranda" />
+
+    <fragment
+        android:id="@+id/nav_pendaftaran_layanan"
+        android:name="com.example.pelayananonlinesumedang.ui.Pendaftaran.PendaftaranFragment"
+        android:label="@string/menu_pendaftaran_layanan"
+        tools:layout="@layout/fragment_pendaftaran" />
+
+    <fragment
+        android:id="@+id/nav_history_pendaftaran"
+        android:name="com.example.pelayananonlinesumedang.ui.History.HistoryFragment"
+        android:label="@string/menu_history_pendaftaran"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.example.pelayananonlinesumedang.ui.Info.InfoFragment"
+        android:label="@string/menu_info"
+        tools:layout="@layout/fragment_info"/>
+</navigation>
